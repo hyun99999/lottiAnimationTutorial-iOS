@@ -3,17 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		4929F812F13B50D41476910E /* Pods_lottiAnimationTutorial_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16703420E32DA1859CEEA7E1 /* Pods_lottiAnimationTutorial_iOS.framework */; };
 		F899007A25CED71000ED630B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F899007925CED71000ED630B /* AppDelegate.swift */; };
 		F899007C25CED71000ED630B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F899007B25CED71000ED630B /* SceneDelegate.swift */; };
-		F899007E25CED71000ED630B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F899007D25CED71000ED630B /* ViewController.swift */; };
+		F899007E25CED71000ED630B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F899007D25CED71000ED630B /* MainViewController.swift */; };
 		F899008125CED71000ED630B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F899007F25CED71000ED630B /* Main.storyboard */; };
 		F899008325CED71000ED630B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F899008225CED71000ED630B /* Assets.xcassets */; };
 		F899008625CED71000ED630B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F899008425CED71000ED630B /* LaunchScreen.storyboard */; };
+		F899009525CEDE1400ED630B /* 42027-2021.json in Resources */ = {isa = PBXBuildFile; fileRef = F899009425CEDE1400ED630B /* 42027-2021.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,11 +24,12 @@
 		F899007625CED71000ED630B /* lottiAnimationTutorial-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "lottiAnimationTutorial-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F899007925CED71000ED630B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F899007B25CED71000ED630B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F899007D25CED71000ED630B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F899007D25CED71000ED630B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F899008025CED71000ED630B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F899008225CED71000ED630B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F899008525CED71000ED630B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F899008725CED71000ED630B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F899009425CEDE1400ED630B /* 42027-2021.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "42027-2021.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +50,6 @@
 				D9998DA23B26D87308D2955D /* Pods-lottiAnimationTutorial-iOS.debug.xcconfig */,
 				0696D3A0D2FB5797CAB6B95D /* Pods-lottiAnimationTutorial-iOS.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,15 +82,24 @@
 		F899007825CED71000ED630B /* lottiAnimationTutorial-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				F899009425CEDE1400ED630B /* 42027-2021.json */,
+				F899009225CEDDB400ED630B /* ViewControllers */,
 				F899007925CED71000ED630B /* AppDelegate.swift */,
 				F899007B25CED71000ED630B /* SceneDelegate.swift */,
-				F899007D25CED71000ED630B /* ViewController.swift */,
 				F899007F25CED71000ED630B /* Main.storyboard */,
 				F899008225CED71000ED630B /* Assets.xcassets */,
 				F899008425CED71000ED630B /* LaunchScreen.storyboard */,
 				F899008725CED71000ED630B /* Info.plist */,
 			);
 			path = "lottiAnimationTutorial-iOS";
+			sourceTree = "<group>";
+		};
+		F899009225CEDDB400ED630B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F899007D25CED71000ED630B /* MainViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +161,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F899009525CEDE1400ED630B /* 42027-2021.json in Resources */,
 				F899008625CED71000ED630B /* LaunchScreen.storyboard in Resources */,
 				F899008325CED71000ED630B /* Assets.xcassets in Resources */,
 				F899008125CED71000ED630B /* Main.storyboard in Resources */,
@@ -206,7 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F899007E25CED71000ED630B /* ViewController.swift in Sources */,
+				F899007E25CED71000ED630B /* MainViewController.swift in Sources */,
 				F899007A25CED71000ED630B /* AppDelegate.swift in Sources */,
 				F899007C25CED71000ED630B /* SceneDelegate.swift in Sources */,
 			);
